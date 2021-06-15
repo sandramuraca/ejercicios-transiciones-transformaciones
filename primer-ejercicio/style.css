@@ -245,7 +245,7 @@ input {
   transition: 0.3s;
 }
 
-.contenedor:hover > .primero{
+.contenedor:hover .primero{
   border-radius: 50%;
 }
 
