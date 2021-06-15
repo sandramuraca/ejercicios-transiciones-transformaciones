@@ -192,6 +192,23 @@ input {
   ----------------------------------
   - Al hacer hover sobre los cuadrados, escalar los impares un factor de 1.2 y los impares un factor de 0.8 tanto vertical como horizontalmente, con una duración de 0.3 segundos.
 */
+.cuadrado1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: lightcoral;
+  margin: 30px 20px 10px;
+  transition: 3s;
+}
+
+.impar:hover{
+  transform: scale(1.2);
+}
+
+.par:hover{
+  transform: scale(0.8);
+}
+
 
 /* 
   Ejercicio 2
@@ -216,6 +233,22 @@ input {
   ----------------------------------
   - Al hacer hover sobre el contenedor, convertir a cada cuadrado en un círculo con border-radius, teniendo el 1ro una duración de 0.3 segundos, el 2do de 0.6 segundos, el 3ro de 0.9 segundos y el 4to de 1.2 segundos.  
 */
+.cuadrado5 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: lightcoral;
+  margin: 30px 20px 10px;
+}
+
+.contenedor .primero{
+  transition: 0.3s;
+}
+
+.contenedor:hover > .primero{
+  border-radius: 50%;
+}
+
 
 /* 
   Ejercicio 6
@@ -223,12 +256,37 @@ input {
   - Al hacer hover sobre el botón, cambiar el color de fondo por #d1c4e9 y al presionarlo, por #b39ddb. Darle una transición con 0.3 segundos de duración.  
 */
 
+.ejercicio-6 .boton {
+  transition: 0.3s;
+}
+
+.boton:hover{
+  background-color: #d1c4e9;
+}
+
+.boton:active{
+  background-color: #b39ddb;
+}
+
 /* 
   Ejercicio 7
   ----------------------------------
   - Al hacer hover sobre el botón, cambiar el color de fondo por #ec407a y el color de texto por #000000, y al presionarlo, cambiar el color de fondo por #e91e63. Darle una transición con 0.3 segundos de duración.  
 */
 
+.ejercicio-7 .boton {
+  transition: 0.3s;
+}
+
+.boton:hover{
+  background-color: #ec407a;
+  color:#000000;
+}
+
+.boton:active{
+  background-color: #e91e63;
+  
+}
 /* 
   Ejercicio 8
   ----------------------------------
